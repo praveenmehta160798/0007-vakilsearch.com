@@ -41,3 +41,63 @@ special_nav_item.addEventListener("click", function (){
         console.log("else run");
     }
 });
+
+
+
+
+// slider in #header
+const slide = document.querySelector(".slide");
+const indicator = document.getElementsByClassName("indicator");
+
+var percent = -1;
+console.log(slide);
+console.log(indicator);
+
+setInterval(() => {
+    
+    if(percent == 0){
+        indicator[0].classList = "indicator active-indicator";
+        indicator[1].classList = "indicator";
+        indicator[2].classList = "indicator";
+        indicator[3].classList = "indicator";
+        indicator[4].classList = "indicator";
+    }
+    if(percent == -1){
+        indicator[0].classList = "indicator";
+        indicator[1].classList = "indicator active-indicator";
+        indicator[2].classList = "indicator";
+        indicator[3].classList = "indicator";
+        indicator[4].classList = "indicator";
+    }
+    if(percent == -2){
+        indicator[0].classList = "indicator";
+        indicator[1].classList = "indicator";
+        indicator[2].classList = "indicator active-indicator";
+        indicator[3].classList = "indicator";
+        indicator[4].classList = "indicator";
+    }
+    if(percent == -3){
+        indicator[0].classList = "indicator";
+        indicator[1].classList = "indicator";
+        indicator[2].classList = "indicator";
+        indicator[3].classList = "indicator active-indicator";
+        indicator[4].classList = "indicator";
+    }
+    if(percent == -4){
+        indicator[0].classList = "indicator";
+        indicator[1].classList = "indicator";
+        indicator[2].classList = "indicator";
+        indicator[3].classList = "indicator";
+        indicator[4].classList = "indicator active-indicator";
+    }
+    
+    slide.style.left = (percent * 100) + "%";
+    
+    percent--;
+    
+    if(percent < -4){
+        console.log(percent);
+        percent = 0;
+    }
+    
+}, 2000);

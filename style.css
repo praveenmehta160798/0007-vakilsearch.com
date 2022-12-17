@@ -8,12 +8,13 @@
 a{
     color: black;
 }
-/* Header Start */
-#header{
+/* Nav Start */
+#nav{
     position: fixed;
     width: 100%;
+    z-index: 100;
 }
-#header .container{
+#nav .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +25,7 @@ a{
 
     padding: 10px 30px;
 }
-#header .logo img{
+#nav .logo img{
     width: 180px;
 }
 .nav-container{
@@ -196,5 +197,282 @@ a{
         width: 100%;
         transition: 0.2s;
     }
-    /* Header End */
 }
+/* Nav End */
+
+
+/* Header Start */
+#header{
+    background: url(img/yellowbanner.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+}
+#header .container{
+    width: 1600px;
+    margin: 0px auto;
+
+    display: flex;
+    flex-direction: column;
+}
+#header .container .content{
+    display: flex;
+    padding: 10px 10px 20px;
+}
+#header .container h1{
+    font-weight: 100;
+    font-size: 2.8rem;
+}
+#header .container h3{
+    font-weight: 100;
+    font-size: 1rem;
+    margin: 10px 0px;
+    line-height: 25px;
+}
+#header .container .text{
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+#header .video-btn{
+    font-size: 0.8rem;
+    align-items: center;
+    display: flex;
+}
+#header .video-btn i{
+    font-size: 2rem;
+    margin-right: 10px;
+}
+#header .container .content .company-name{
+    padding-right: 5%;
+    width: 70%;
+}
+#header .container .slide-box{
+    margin-top: 20px;
+    overflow: hidden;
+    width: 90%;
+}
+#header .container .slide{
+    display: flex;
+    width: 500%;
+    position: relative;
+    left: 0;
+
+    transition: left 0.5s;
+}
+#header .container .page{
+    background-color: rgb(255,237,151);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+}
+#header .container .page .details{
+    font-size: 1rem;
+    line-height: 20px;
+    padding: 0px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#header .container .page .details span{
+    font-weight: 700;
+}
+.register-form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+}
+.register-form h4{
+    text-align: center;
+    font-size: 24px;
+}
+.register-form input{
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: rgb(240,241,243);
+    margin: 10px 0px;
+    
+}
+.msg{
+    width: 100%;
+    height: 45px;
+    
+    text-align: center;
+}
+.msg p{
+    background-color: rgb(255,237,151);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+.register-form button{
+    padding:15px;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: rgb(252,210,9);
+    border-radius: 8px;
+    border: none;
+    margin: 20px 0px;
+}
+.indicator-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+    height: 30px;
+}
+.indicator{
+    width: 8px;
+    height: 8px;
+    background-color: rgb(171, 167, 167);
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+.active-indicator{
+    background-color: black;
+}
+/* Header End */
+
+
+/* Service Start */
+#service-intro{
+    /* background-image: radial-gradient(#bd1414 15%,transparent 0),radial-gradient(#f5f5f5 15%,transparent 0); */
+    background: radial-gradient(rgb(231, 231, 231) 15%,white 15%);
+    background-color: #fff;
+    background-position: 0 0,50px 50px;
+    background-size: 20px 20px;
+
+}
+#service-intro .container{
+    width: 1600px;
+    margin: 0px auto;
+    padding: 30px 0px;
+}
+#service-intro .container .content-block{
+    text-align: center;
+}
+#service-intro .container .content-block h2{
+    font-size: 1.9rem;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+#service-intro .container .content-block p{
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+#service-intro .container .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    margin: 20px auto;
+    width: 70%;
+}
+#service-intro .container .row .column{
+    width: 30%;
+    text-align: center;
+    height: 152px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 0.9rem;
+    line-height: 20px;
+}
+#service-intro .container .row .column img{
+    width: 66px;
+}
+
+/* Service End */
+
+/* Service Body Start */
+#service-body{
+    width: 100%;
+    /* padding: 0px 50px; */
+    display: flex;
+    background-color: rgb(250,250,250);
+}
+#service-body .container{
+    justify-content: space-between;
+    display: flex;
+    margin: auto;
+    width: 100%;
+
+}
+#service-body .navigation-list .list-item a{
+    padding: 16px;
+    width: 245px;
+    height: 56px;
+    display: inline-block;
+    background-color: rgb(247,247,247);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#service-body .container .navigation-list{
+    position: relative;
+    padding: 50px 20px;
+}
+#service-body .container .more-details{
+    position: relative;
+    padding: 30px;
+}
+#service-body .container .register-form{
+
+    box-shadow: 0px 0px 20px 0px gray;
+}
+#service-body .container .navigation-list .ul,
+#service-body .container .register-form{
+    position: sticky;
+    top: 70px;
+    width: 100%;
+
+}
+.service-inner-body{
+    width: 930px;   
+}
+#section-2 .more-details > .register-form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#section-2 .more-details > .register-form .left-form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+#section-2 .more-details > .register-form .left-form h4{
+    position: relative;
+    left: 50%;
+}
+#section-2 .more-details > .register-form .left-form h5{
+    position: relative;
+    left: 50%;
+    color: gray;
+    margin: 10px 0px;
+    font-size: 0.8rem;
+}
+#section-2 .more-details > .register-form .left-form h6{
+    color: gray;
+}
+
+
+#section-3 .box{
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 8px;
+}
+#section-3 .sub-box{
+    display: flex;
+}
+/* Service Body End */
